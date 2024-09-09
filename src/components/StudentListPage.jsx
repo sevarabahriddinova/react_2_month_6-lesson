@@ -1,7 +1,7 @@
 // src/pages/StudentListPage.js
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setSearchTerm, deleteStudent } from '../store/studentsSlice'; 
+import { setSearchTerm, deleteStudent } from '../store/studentsSlice';
 import { Link } from 'react-router-dom';
 import './studentList.css';
 
@@ -21,17 +21,19 @@ const StudentListPage = () => {
   };
 
   return (
-    <div className="list-container">
-      <h2>Student List</h2>
-      
-      <input
-        type="text"
-        placeholder="Search by name"
-        value={searchTerm}
-        onChange={(e) => dispatch(setSearchTerm(e.target.value))}
-      />
+    <div className="list-container bg-white p-8">
+      <div className='flex justify-between'>
+        <h2 className='text-[28px] font-bold '>Student List</h2>
+
+        <input className='w-[400px] p-2 bg-gray-200 outline-none rounded-xl'
+          type="text"
+          placeholder="Search by name"
+          value={searchTerm}
+          onChange={(e) => dispatch(setSearchTerm(e.target.value))}
+        />
+      </div>
       <table>
-        <thead>
+        <thead className=''>
           <tr>
             <th>Name</th>
             <th>Age</th>
@@ -41,7 +43,7 @@ const StudentListPage = () => {
         </thead>
         <tbody>
           {filteredStudents.map((student, index) => (
-            <tr key={index}>
+            <tr key={index} className=''>
               <td>{student.name}</td>
               <td>{student.age}</td>
               <td>{student.email}</td>

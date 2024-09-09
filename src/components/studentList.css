@@ -4,60 +4,41 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  background: linear-gradient(to right, #04cad4e4, #7cd5e4);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow:0px 0px 5px;
   max-width: 1000px;
   margin: auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 h2 {
+  font-size: 26px;
   text-align: center;
   color: #333;
   margin-bottom: 20px;
 }
-
-input[type="text"] {
-  width: 100%;
-  padding: 10px 0;
-  margin-bottom: 20px 0;
-  border: 2px solid #4a90e2;
-  border-radius: 5px;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus {
-  border-color: #357abd;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
+  
 }
 
 th, td {
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;
+  
 }
-
-thead {
-  background-color: #4a90e2;
-  color: white;
-}
-
-tbody tr:hover {
-  transition: background-color 0.3s ease;
-}
-
+  
 .delete-button {
-  background-color: #e94e77;
+  background-color:red;
   color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
+  padding: 8px 20px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -68,9 +49,9 @@ tbody tr:hover {
 }
 
 .add-student-button {
-  margin-top: 20px;
+  margin: 20px auto;
   display: block;
-  width: 100%;
+  width:400px;
   padding: 10px;
   background-color: #4a90e2;
   color: white;

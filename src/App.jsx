@@ -10,15 +10,17 @@ import './styles.css';
 
 function App() {
   return (
-   <div>
+   <div className='w-[800px] m-auto'>
      <Router>
       <nav>
-        <Link to="/" className="nav-link">
+        <div className=' flex gap-8 my-[50px]'>
+        <Link to="/" className="text-[28px] shadow-2xl p-6 rounded-lg bg-orange-200">
           Register
         </Link>
-        <Link to="/students" className="nav-link">
+        <Link to="/students" className="text-[28px] shadow-2xl p-6 rounded-lg bg-orange-200 ">
           Student List
         </Link>
+        </div>
       </nav>
       <Routes>
         <Route path="/" element={<RegistrationPage />} />
