@@ -1,0 +1,93 @@
+/* src/pages/StudentListPage.css */
+.list-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background: linear-gradient(to right, #04cad4e4, #7cd5e4);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px 0;
+  border: 2px solid #4a90e2;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #357abd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #4a90e2;
+  color: white;
+}
+
+tbody tr:hover {
+  transition: background-color 0.3s ease;
+}
+
+.delete-button {
+  background-color: #e94e77;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #d43f66;
+  transform: scale(1.05);
+}
+
+.add-student-button {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-student-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.add-student-button:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
